@@ -2,7 +2,7 @@
   "applinks": {
     "apps": [],
     "details": [{
-      "appID": "MVY23VAYCZ.com.yourcompany.Ranxs",
+      "appID": "MVY23VAYCZ.com.pcp.Ranxs",
       "paths": ["/ranking/*", "/shared/*"]
     }]
   }
