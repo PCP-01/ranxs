@@ -6,5 +6,15 @@
 <body>
     <h1>Shared Ranking</h1>
     <p>This is a shared ranking page.</p>
+    <p id="uuid-display"></p>
+    
+    <script>
+        // Get the UUID from the URL
+        const path = window.location.pathname;
+        const uuid = path.split('/shared/')[1];
+        
+        // Display it on the page
+        document.getElementById('uuid-display').textContent = 'UUID: ' + uuid;
+    </script>
 </body>
 </html>
