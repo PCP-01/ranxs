@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Ranxs - Shared Ranking</title>
+    <meta name="apple-itunes-app" content="app-id=YOUR_APP_STORE_ID">
 </head>
 <body>
     <h1>Shared Ranking</h1>
@@ -15,6 +16,12 @@
         
         // Display it on the page
         document.getElementById('uuid-display').textContent = 'UUID: ' + uuid;
+        
+        // Update the app banner to include the current URL
+        const metaTag = document.querySelector('meta[name="apple-itunes-app"]');
+        if (metaTag) {
+            metaTag.content = metaTag.content + ', app-argument=' + window.location.href;
+        }
     </script>
 </body>
 </html>
